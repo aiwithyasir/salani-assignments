@@ -8,5 +8,5 @@ service.start()
 
 driver = webdriver.Chrome(path)
 driver.get(website)
-
+driver.find_element_by_xpath("//input[@type='checkbox'][@name='feature_six_browse-bin'][@aria-label='English']")
 driver.find_element_by_xpath("//a[@data-ng-click=\"vm.setTabType('Top Players')\"]").click()
